@@ -1,0 +1,11 @@
+/* faq transition property */
+.trans{
+    overflow: hidden;
+    max-height: 0;
+    transition: height 0.5s cubic-bezier(0,1,0,1);
+}
+.show{
+    height: auto;
+    max-height: 999px;
+    transition: height 0.5s cubic-bezier(1,0,1,0);
+}
