@@ -58,7 +58,7 @@ const FAQsection = () => {
                               <h4 className='text-[22px] leading-[32px] font-medium text-black'>
                               {faq.question} 
                               </h4>  
-                              <button className={selected === index ? "cursor-pointer border-none transition-all bg-[#7f54f3] text-white  w-[40px] h-[40px] rounded-full p-1 text-2xl flex items-center justify-center" : "flex items-center justify-center cursor-pointer border border-solid border-[#7f54f3]   w-[40px] h-[40px] rounded-full p-1 text-2xl" }
+                              <button className={selected === index ? "cursor-pointer border-none transition-all bg-[#7f54f3] text-white  w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] rounded-[100%] p-1 text-2xl flex items-center justify-center" : "flex items-center justify-center cursor-pointer border border-solid border-[#7f54f3] w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] rounded-[100%] p-1 text-2xl" }
                                   >
                                       {selected === index   ? '-' : '+'}
                             </button> 
