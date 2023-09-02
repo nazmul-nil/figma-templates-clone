@@ -1,5 +1,5 @@
 
-const HireUsModal = ({isVisible, onClose, children}) => {
+const Modal = ({isVisible, onClose, children}) => {
     if(!isVisible) return null
 
     const handleClose = (e) => {
@@ -7,11 +7,11 @@ const HireUsModal = ({isVisible, onClose, children}) => {
     }
   return (
     <div className="bg-black bg-opacity-50  backdrop-blur-md  fixed inset-0 flex justify-center items-center z-50" id="hire-us-modal-wrapper" onClick={handleClose}>
-        <div className="w-[350px] md:w-[500px] lg:w-[896px]">
+        <div className="w-[340px] md:w-[500px] lg:w-[896px]">
             
-            <div className="bg-white rounded-[10px] flex  relative ">
+            <div className="bg-white rounded-[10px]  relative ">
                 {children}
-                <button className="border-none  cursor-pointer font-semibold text-lg absolute right-5 top-5" onClick={onClose}>
+                <button className="border-none bg-transparent cursor-pointer font-semibold text-lg absolute right-5 top-5" onClick={onClose}>
                     X
                 </button>
             </div>
@@ -20,4 +20,4 @@ const HireUsModal = ({isVisible, onClose, children}) => {
   )
 }
 
-export default HireUsModal
+export default Modal

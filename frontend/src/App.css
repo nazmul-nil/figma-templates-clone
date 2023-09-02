@@ -9,3 +9,14 @@
     max-height: 999px;
     transition: height 0.5s cubic-bezier(1,0,1,0);
 }
+
+/* Dropdown right arrow css */
+.right-arrow-span{
+    transform: translateX(-10px);
+    opacity: 0;
+} 
+
+.dropdown-list:hover .right-arrow-span{
+    opacity: 1;
+    transform: translateX(10PX);
+}
